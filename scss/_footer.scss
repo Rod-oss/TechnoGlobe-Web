@@ -1,0 +1,34 @@
+/* Estilos para el footer */
+footer {
+    background-color: var(--color-amarillo-claro);
+    color: #d3d0d0;
+    text-align: center;
+    padding: 5px 0;
+    height: 100px;
+}
+/* Estilos para pantallas grandes */
+@media (min-width: 1200px) {
+    .main {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .carousel-inner {
+        max-width: 600px;
+        margin: auto;
+    }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .main {
+        padding: 10px;
+    }
+
+    .carousel-inner {
+        max-width: 100%;
+    }
+    .container-text-center, .row{
+        margin: 10px, 10px, 10px, 10px;
+    }
+}
