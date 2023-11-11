@@ -20,6 +20,11 @@ body {
   margin: 0;
 }
 
+/*Texto de identificación de página*/
+.text-page {
+  color: var(--color-rojo);
+}
+
 /* Variables para los colores */
 :root {
   --color-crema: #f1e4c3ef;
@@ -193,9 +198,10 @@ article p, article a {
 form {
   width: 300px;
   margin: 0 auto;
+  white-space: normal;
 }
 
-input[type=text], input[type=email], textarea {
+input[type=text], input[type=mail], textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -206,8 +212,11 @@ input[type=text], input[type=email], textarea {
 
 input[type=submit], input[type=reset] {
   width: 100%;
-  padding: 14px 20px;
-  margin: 8px 0;
+  padding: 10px;
+  font-size: 14px;
+  white-space: normal;
+  margin: 2px;
+  radius: 8px;
   cursor: pointer;
 }
 
@@ -351,6 +360,10 @@ article p, article a {
   font-size: 18px;
 }
 
+.img.reseñas {
+  padding-left: 10px;
+}
+
 /* Estilos para pantallas grandes */
 @media (min-width: 1200px) {
   .main {
@@ -441,6 +454,7 @@ footer {
   text-align: center;
   padding: 5px 0;
   height: 100px;
+  padding-top: 10px;
 }
 
 /* Estilos para pantallas grandes */
@@ -473,9 +487,13 @@ footer {
   justify-content: space-around;
 }
 
+.container .image-grid {
+  margin: 10px;
+}
+
 .container .box {
   flex: 0 0 calc(33.33% - 20px);
-  margin: 10px;
+  margin: 10px, 10px, 10px, 10px;
   height: 200px;
   background-color: #3498db;
   color: white;
@@ -495,7 +513,7 @@ footer {
 }
 
 .btn:hover {
-  background-color: #3498db;
+  background-color: #2993da;
 }
 
 /*Animaciones de carga*/

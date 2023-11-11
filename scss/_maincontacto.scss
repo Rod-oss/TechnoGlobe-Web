@@ -2,9 +2,10 @@
 form {
     width: 300px;
     margin: 0 auto;
+    white-space: normal;
 }
 
-input[type=text], input[type=email], textarea {
+input[type=text], input[type=mail], textarea {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -15,8 +16,11 @@ input[type=text], input[type=email], textarea {
 
 input[type=submit], input[type=reset] {
     width: 100%;
-    padding: 14px 20px;
-    margin: 8px 0;
+    padding: 10px;
+    font-size: 14px;
+    white-space: normal;
+    margin: 2px,;
+    radius: 8px;
     cursor: pointer;
 }
 
