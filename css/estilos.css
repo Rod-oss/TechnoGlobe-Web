@@ -1,6 +1,17 @@
 @charset "UTF-8";
 /* Importación de recursos */
 @import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+
+/* Variables para los colores */
+:root {
+  --color-crema: #f1e4c3ef;
+  --color-azul: #2e6fb9e1;
+  --color-rojo: #ee8282;
+  --color-gris: #ddd;
+  --color-azul-oscuro: #1a5bbc93;
+  --color-amarillo-claro: #b97d2ee1;
+}
+
 /* Estilos generales */
 body {
   font-family: "Heebo", sans-serif;
@@ -10,26 +21,23 @@ body {
   margin: 0;
 }
 
-header {
-  /* Estilos para el encabezado */
-  /* Estilos de imagen */
-  /* Estilos para la barra de navegación */
-  /* Estilos para el logo */
-  /* Estilos para el elemento 'nav' */
-  /* Estilos para pantallas grandes */
-  /* Estilos para pantallas pequeñas */
-}
-header .bgCremaPropio {
+/* Estilos para el encabezado */
+.bgCremaPropio {
   background-color: var(--color-crema);
 }
-header img {
+
+/* Estilos de imagen */
+img {
   max-width: 100%;
   height: auto;
 }
-header .navbar-nav .nav-link.active, header .navbar-nav .nav-link.show {
+
+/* Estilos para la barra de navegación */
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
   color: var(--color-azul);
 }
-header .navbar {
+
+.navbar {
   background-color: var(--color-crema);
   width: 100%;
   height: 100%;
@@ -37,12 +45,14 @@ header .navbar {
   padding-right: 10px;
   font-weight: bold;
 }
-header * .navbar ul {
+
+.navbar ul {
   list-style-type: none;
   text-align: center;
   padding: 0;
 }
-header * .navbar li {
+
+.navbar li {
   display: inline-block;
   margin: 10px;
   text-align: center;
@@ -50,7 +60,8 @@ header * .navbar li {
   font-size: 1rem;
   padding-right: 20px;
 }
-header .navbar li a {
+
+.navbar li a {
   color: var(--color-rojo);
   font-size: 22px;
   font-weight: 400;
@@ -59,14 +70,17 @@ header .navbar li a {
   transition: color 0.3s;
   text-align: right;
 }
-header .navbar li:hover a, header .navbar-toggler:hover {
+
+.navbar li:hover a, .navbar-toggler:hover {
   background-color: var(--color-gris);
   color: #fff;
   padding: 5px;
   background-color: var(--color-azul-oscuro);
   height: 30px;
 }
-header .logo {
+
+/* Estilos para el logo */
+.logo {
   max-width: 300px;
   float: left;
   display: inline;
@@ -74,33 +88,37 @@ header .logo {
   padding-top: 10px;
   padding-left: 10px;
 }
-header nav {
+
+/* Estilos para el elemento 'nav' */
+nav {
   position: relative;
   display: inline;
   bottom: 5px;
 }
+
+/* Estilos para pantallas grandes */
 @media (min-width: 1200px) {
-  header .main {
+  .main {
     max-width: 1200px;
     margin: auto;
   }
-  header .carousel-inner {
+  .carousel-inner {
     max-width: 600px;
     margin: auto;
   }
 }
+/* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
-  header header .main {
+  header .main {
     padding: 10px;
   }
-  header header .carousel-inner {
+  header .carousel-inner {
     max-width: 100%;
   }
-  header header .container-text-center, header header .row {
+  header .container-text-center, header .row {
     margin: 10px, 10px, 10px, 10px;
   }
 }
-
 /* Estilos para el contenido principal */
 .main {
   display: flex;
@@ -138,6 +156,7 @@ article p, article a {
   font-size: 18px;
 }
 
+/* Estilos de animación*/
 /* Estilos para pantallas grandes */
 @media (min-width: 1200px) {
   .main {
