@@ -1,6 +1,9 @@
 /*Animación para botones -Leer más- */
 .btn, .btn-primary {
     transition: background-color 0.5s ease;
+    width: 100px;
+    height: 50px;
+    padding: 10px 20px;  
 }
 
 .btn:hover {
