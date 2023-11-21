@@ -1,0 +1,154 @@
+/* Estilos generales */
+body {
+    width: 100%;
+    font-family: 'Heebo', sans-serif;
+    overflow-x: hidden; 
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Propiedades del formulario en la página de "Contacto" */
+form {
+    width: 300px;
+    margin: 0 auto;
+    white-space: normal;
+}
+
+input[type=text],
+input[type=mail],
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=submit],
+input[type=reset] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    white-space: normal;
+    margin: 2px;
+    cursor: pointer;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input[type=reset] {
+    background-color: var(--color-azul-oscuro);
+    color: white;
+    border: none;
+}
+
+input[type=reset]:hover {
+    background-color: #2177c7;
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 1200px) {
+    .main,
+    .carousel-inner {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .main {
+        padding: 10px;
+    }
+
+    .carousel-inner {
+        max-width: 100%;
+    }
+
+    .container-text-center,
+    .row {
+        margin: 10px;
+    }
+}
+
+/* Estilos para el contenido principal */
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 20px;
+}
+
+main h1 {
+    text-align: center;
+    padding: 30px;
+    padding-left: 100px;
+}
+
+h2, h3, h4 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Estilos para los artículos */
+article {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding-top: 30px;
+}
+
+article h2 {
+    color: #333;
+    font-size: 22px;
+}
+
+article p,
+article a {
+    color: #666;
+    font-size: 18px;
+}
+
+.img.reseñas {
+    padding-left: 10px;
+}
+
+iframe {
+    padding: 10px;
+}
+
+/* Estilos de animación */
+
+/* Texto de identificación de página */
+.text-page {
+    color: var(--color-rojo);
+}
+
+/* Características de los contenedores */
+.container {
+    max-width: 100%;
+}
+
+/* Características de imagen */
+.image-grid img,
+.col-sm-12 img,
+.col-md-6 {
+    max-width: 100%;
+    height: auto;
+}
+
+
+

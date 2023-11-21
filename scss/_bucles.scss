@@ -3,9 +3,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+
   }
 
-.container .image-grid {
+.container .image-grid, .container, .video-container {
+  width: 100%;
   margin: 10px;
 }
   
@@ -23,6 +25,10 @@
   .container .box:hover {
     transform: scale(1.1);
   }
+
+.text-center {
+  padding: 10px;
+}
 
 
   
