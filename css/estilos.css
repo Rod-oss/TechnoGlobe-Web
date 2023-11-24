@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* Importación de recursos */
 /* Variables para los colores */
 @import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
 :root {
@@ -359,4 +358,4 @@ footer {
   animation: spin 2s linear infinite;
 }
 
-/*# sourceMappingURL=estilos.css.map */
+@import "estilos.scss"
