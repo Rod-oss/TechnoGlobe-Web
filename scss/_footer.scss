@@ -2,7 +2,7 @@
 footer {
     width: 100%;
     background-color: var(--color-amarillo-claro);
-    color: #ffffff;
+    color: var(--color-blanco);
     text-align: center;
     padding: 40px;
 }
@@ -22,20 +22,20 @@ footer {
 
 .footer-column h5,
 .footer-column h6 {
-    color: #ffffff;
+    color: var(--color-blanco);
     font-size: 16px;
 }
 
 .footer-column a {
     display: block;
-    color: #fff;
+    color: var(--color-blanco);
     text-decoration: none;
     margin-bottom: 5px;
     font-size: 1em;
 }
 
 .footer-column p {
-    color: #fff;
+    color: var(--color-blanco);
 }
 
 @media (min-width: 768px) {

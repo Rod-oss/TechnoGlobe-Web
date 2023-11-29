@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Importación de recursos */
 /* Variables para los colores */
 @import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
 :root {
@@ -8,6 +9,11 @@
   --color-gris: #ddd;
   --color-azul-oscuro: #1a5bbc93;
   --color-amarillo-claro: #b97d2ee1;
+  --color-blanco: #ffffff;
+  --color-verde: #4CAF50;
+  --color-verde-claro: #45a049;
+  --color-negro: #333;
+  --color-gris-parrafo: #666;
 }
 
 /* Estilos generales */
@@ -15,7 +21,7 @@ body {
   width: 100%;
   font-family: "Heebo", sans-serif;
   overflow-x: hidden;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
   margin: 0;
 }
@@ -34,7 +40,7 @@ textarea {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid var(--color-gris);
   box-sizing: border-box;
 }
 
@@ -49,23 +55,23 @@ input[type=reset] {
 }
 
 input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
+  background-color: var(--color-verde);
+  color: var(--color-blanco);
   border: none;
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: var(--color-verde-claro);
 }
 
 input[type=reset] {
   background-color: var(--color-azul-oscuro);
-  color: white;
+  color: var(--color-blanco);
   border: none;
 }
 
 input[type=reset]:hover {
-  background-color: #2177c7;
+  background-color: var(--color-azul-oscuro);
 }
 
 /* Estilos para pantallas grandes */
@@ -102,17 +108,24 @@ main h1 {
   text-align: center;
   padding: 30px;
   padding-left: 100px;
+  margin: 20px;
 }
 
-h2, h3, h4 {
+h2 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+h3, h4 {
   text-align: center;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: medium;
 }
 
 /* Estilos para los artículos */
 article {
-  background-color: #fff;
+  background-color: var(--color-blanco);
   padding: 15px;
   margin-bottom: 15px;
   border-radius: 5px;
@@ -120,14 +133,18 @@ article {
 }
 
 article h2 {
-  color: #333;
+  color: var(--color-negro);
   font-size: 22px;
 }
 
 article p,
 article a {
-  color: #666;
+  color: var(--color-gris-parrafo);
   font-size: 18px;
+  text-align: justify;
+  margin-bottom: 30px;
+  margin-top: 32px;
+  padding: 15px;
 }
 
 .img.reseñas {
@@ -138,7 +155,6 @@ iframe {
   padding: 10px;
 }
 
-/* Estilos de animación */
 /* Texto de identificación de página */
 .text-page {
   color: var(--color-rojo);
@@ -165,6 +181,11 @@ iframe {
   --color-gris: #ddd;
   --color-azul-oscuro: #1a5bbc93;
   --color-amarillo-claro: #b97d2ee1;
+  --color-blanco: #ffffff;
+  --color-verde: #4CAF50;
+  --color-verde-claro: #45a049;
+  --color-negro: #333;
+  --color-gris-parrafo: #666;
 }
 
 /* Estilos para el encabezado */
@@ -219,7 +240,7 @@ img {
 
 .navbar li:hover a, .navbar-toggler:hover {
   background-color: var(--color-gris);
-  color: #fff;
+  color: var(--color-blanco);
   padding: 5px;
   background-color: var(--color-azul-oscuro);
   height: 30px;
@@ -228,6 +249,7 @@ img {
 /* Estilos para el logo */
 .logo {
   max-width: 300px;
+  width: 300px;
   float: left;
   display: inline;
   padding-bottom: 5px;
@@ -269,34 +291,45 @@ nav {
 footer {
   width: 100%;
   background-color: var(--color-amarillo-claro);
-  color: #d3d0d0;
+  color: var(--color-blanco);
   text-align: center;
-  padding: 5px 0;
-  height: 100px;
-  padding-top: 10px;
+  padding: 40px;
 }
 
-/* Estilos para pantallas grandes */
-@media (min-width: 1200px) {
-  .main {
-    max-width: 1200px;
-    margin: auto;
-  }
-  .carousel-inner {
-    max-width: 600px;
-    margin: auto;
-  }
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
-/* Estilos para pantallas pequeñas */
-@media (max-width: 768px) {
-  .main {
-    padding: 10px;
-  }
-  .carousel-inner {
-    max-width: 100%;
-  }
-  .container-text-center, .row {
-    margin: 10px, 10px, 10px, 10px;
+
+.footer-column {
+  flex: 1;
+  max-width: 300px;
+  margin: 10px;
+}
+
+.footer-column h5,
+.footer-column h6 {
+  color: var(--color-blanco);
+  font-size: 16px;
+}
+
+.footer-column a {
+  display: block;
+  color: var(--color-blanco);
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-size: 1em;
+}
+
+.footer-column p {
+  color: var(--color-blanco);
+}
+
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
   }
 }
 /*Bucle para contenedores*/
@@ -306,7 +339,9 @@ footer {
   justify-content: space-around;
 }
 
-.container .image-grid, .container, .video-container {
+.container .image-grid,
+.container,
+.video-container {
   width: 100%;
   margin: 10px;
 }
@@ -315,8 +350,8 @@ footer {
   flex: 0 0 calc(33.33% - 20px);
   margin: 10px, 10px, 10px, 10px;
   height: 200px;
-  background-color: #3498db;
-  color: white;
+  background-color: var(--color-azul);
+  color: var(--color-blanco);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -331,13 +366,30 @@ footer {
   padding: 10px;
 }
 
+iframe {
+  width: 560;
+  height: 315;
+}
+
 /*Animación para botones -Leer más- */
-.btn, .btn-primary {
+.btn,
+.btn-primary, .btn-secondary {
   transition: background-color 0.5s ease;
+  width: 140px;
+  height: 50px;
+  padding: 10px 10px;
+  white-space: nowrap;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn:hover {
-  background-color: #2993da;
+  background-color: var(--color-azul);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-rojo);
 }
 
 /*Animaciones de carga*/
@@ -349,13 +401,35 @@ footer {
     transform: rotate(360deg);
   }
 }
+@keyframes stopAfter5s {
+  0% {
+    animation-play-state: running;
+  }
+  100% {
+    animation-play-state: paused;
+  }
+}
 .loader {
-  border: 16px solid #f3f3f3;
+  border: 16px solid var(--color-blanco);
   border-radius: 50%;
-  border-top: 16px solid #3498db;
+  border-top: 16px solid var(--color-azul-oscuro);
   width: 120px;
   height: 120px;
-  animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite, stopAfter5s 5s forwards;
 }
 
-@import "estilos.scss"
+.content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: 0.3s grid-template-row ease;
+}
+
+article:hover .content {
+  grid-template-rows: 1fr;
+}
+
+.content > div {
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=estilos.css.map */
